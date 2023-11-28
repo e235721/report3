@@ -26,6 +26,10 @@ public class LivingThing {
         return this.hitPoint;
     }
 
+    public int getAttack() {
+        return this.attack;
+    }
+
     public void attack(LivingThing opponent) {
         if (!dead) {
             int damage = (int) (Math.random() * attack);
@@ -38,6 +42,7 @@ public class LivingThing {
         hitPoint -= damage;
         if (hitPoint < 0) {
             dead = true;
+            hitPoint = 0;
         }
     }
 }

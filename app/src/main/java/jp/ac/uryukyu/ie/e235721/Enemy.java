@@ -32,7 +32,7 @@ public class Enemy extends LivingThing {
     public void wounded(int damage){
         super.wounded(damage);
         if(isDead()) {
-            System.out.printf("モンスター%sは倒れた。\n", getName());
+            System.out.printf("%sは倒れた。\n", getName());
         }
     }
 

@@ -32,7 +32,7 @@ public class Hero extends LivingThing {
     public void wounded(int damage){
         super.wounded(damage);
         if(isDead()) {
-            System.out.printf("勇者%sは道半ばで力尽きてしまった。\n", getName());
+            System.out.printf("%sは道半ばで力尽きてしまった。\n", getName());
         }
     }
 }
